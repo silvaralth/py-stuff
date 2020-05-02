@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="200" viewBox="0 0 640 200">
+  <defs>
+    <clipPath id="clip-SQLAPI">
+      <rect width="640" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="SQLAPI" clip-path="url(#clip-SQLAPI)">
+    <rect width="640" height="200" fill="#fff"/>
+    <g id="Rectángulo_1" data-name="Rectángulo 1" transform="translate(22 21)" fill="#d3d3d3" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" fill="none"/>
+    </g>
+    <g id="Rectángulo_2" data-name="Rectángulo 2" transform="translate(457 21)" fill="#d3d3d3" stroke="#707070" stroke-width="1">
+      <rect width="160" height="160" stroke="none"/>
+      <rect x="0.5" y="0.5" width="159" height="159" fill="none"/>
+    </g>
+    <text id="Application_Program" data-name="Application
+Program" transform="translate(35 50)" fill="#fff" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">Application</tspan><tspan y="0" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"></tspan><tspan x="0" y="28">Program</tspan></text>
+    <text id="DBMS" transform="translate(470 50)" fill="#fff" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">DBMS</tspan></text>
+    <text id="CONNECT_db_user_pswd_" data-name="CONNECT(db, user, pswd)" transform="translate(196 32)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">CONNECT(db, user, pswd)</tspan></text>
+    <text id="SEND_UPDATE_Employees_SET_" data-name="SEND(UPDATE Employees SET…)" transform="translate(196 59)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">SEND(UPDATE Employees SET…)</tspan></text>
+    <text id="EXECUTE_" data-name="EXECUTE()" transform="translate(196 86)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">EXECUTE()</tspan></text>
+    <text id="STATUS_CHECK_" data-name="STATUS_CHECK()" transform="translate(196 113)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">STATUS_CHECK()</tspan></text>
+    <text id="DISCONNECT_" data-name="DISCONNECT()" transform="translate(196 166)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">DISCONNECT()</tspan></text>
+    <text id="OK" transform="translate(434 141)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">OK</tspan></text>
+    <line id="Línea_1" data-name="Línea 1" x2="245" transform="translate(195.5 38.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <line id="Línea_2" data-name="Línea 2" x2="245" transform="translate(195.5 65.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <line id="Línea_3" data-name="Línea 3" x2="245" transform="translate(195.5 92.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <line id="Línea_4" data-name="Línea 4" x2="245" transform="translate(195.5 119.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <g id="Polígono_1" data-name="Polígono 1" transform="translate(447 32) rotate(90)" fill="#fff">
+      <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+      <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+    </g>
+    <g id="Polígono_2" data-name="Polígono 2" transform="translate(447 59) rotate(90)" fill="#fff">
+      <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+      <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+    </g>
+    <g id="Polígono_3" data-name="Polígono 3" transform="translate(447 86) rotate(90)" fill="#fff">
+      <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+      <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+    </g>
+    <g id="Polígono_4" data-name="Polígono 4" transform="translate(447 113) rotate(90)" fill="#fff">
+      <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+      <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+    </g>
+    <g id="Grupo_1" data-name="Grupo 1" transform="translate(195.5 140)">
+      <line id="Línea_5" data-name="Línea 5" x1="245" transform="translate(6.5 6.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+      <g id="Polígono_5" data-name="Polígono 5" transform="translate(0 14) rotate(-90)" fill="#fff">
+        <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+        <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+      </g>
+    </g>
+    <g id="Grupo_2" data-name="Grupo 2" transform="translate(1 -43)">
+      <line id="Línea_5-2" data-name="Línea 5" x2="245" transform="translate(194.5 215.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+      <g id="Polígono_5-2" data-name="Polígono 5" transform="translate(446 209) rotate(90)" fill="#fff">
+        <path d="M 13.12947845458984 11.5 L 0.8705216646194458 11.5 L 7 0.9923228621482849 L 13.12947845458984 11.5 Z" stroke="none"/>
+        <path d="M 7 1.984635353088379 L 1.741037368774414 11 L 12.25896263122559 11 L 7 1.984635353088379 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#d3d3d3"/>
+      </g>
+    </g>
+  </g>
+</svg>
