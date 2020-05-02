@@ -82,3 +82,44 @@ df.describe(include="all")
 ```
 
 Another method to check the dataset is **df. info**, it returns the top 30 rows and bottom 30 rows o a dataframe.
+
+## Accessing Databases with Python
+
+An application programming interface is a set of functions that you can call to get access to some type of servers. The SQL API consists of library function calls as an application programming interface, API, for the DBMS. To pass SQL statements to the DBMS, an application program calls functions in the API, and it calls other functions to retrieve query results and status information from the DBMS.
+
+![SQL API](https://github.com/silvaralth/py-stuff/blob/master/wikiImages/SQLAPI.svg)
+
+To send the SQL statement to the DBMS, the program builds the statement as a text string in a buffer and then makes an API call to pass the buffer contents to the DBMS. The application program makes API calls to check the status of its DBMS request and to handle errors. 
+
+**DB-API** is Python's standard API for accessing relational databases. It is a standard that allows you to write a single program that works with multiple kinds of relational databases instead of writing a separate program for each one. So, if you learn the DB-API functions, then you can apply that knowledge to use any database with Python.
+
+We use **Conection Objects** to manage transactions and **Cursor Object** to make database queries:
+
+```
+# Common methods
+
+cursor()
+commit()
+rollback()
+close()
+
+# DB-API example 
+from dbmodule import connect
+
+# create connection object
+connection = connect('dbname','username','password')
+
+# create a cursor object
+cursor = connection.cursor()
+
+# run queries
+cursor.execute('SELECT * FROM MyTable')
+results = cursor.fetchall()
+
+# free resources
+cursor.close()
+connection.close()
+```
+
+
+
