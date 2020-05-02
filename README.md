@@ -48,5 +48,37 @@ df.to_csv(path)
 # ex.
 pd.read_sql(url)
 df.to_sql(path)
+```
+## Checking data
+
+As we can use math functions to manipulate data, we can check the **datatypes** in a dataframe ussing **dtypes**
 
 ```
+# check datatype, return the type of each column in a series
+df.dtypes
+```
+
+Commonly we can check the statistical summary of each column to learn about the distribution of data (in each column). Statistical metrics can tell if are mathematical issues that may exist such as extreme outliers and large deviations to address theese issues later.
+
+To get the quick statistics, we use the **describe** method.
+
+```
+df.describe()
+
+# count -> number of terms
+# mean -> average value
+# std -> standard deviation
+# min/max
+```
+
+By default, the **dataframe.describe** functions skips rows and columns that do not contain numbers. 
+
+```
+df.describe(include="all")
+
+# unique -> the number of distinct objects in the column
+# top -> most frequently occurring object
+# freq -> the number of times the top object appears in the column
+```
+
+Another method to check the dataset is **df. info**, it returns the top 30 rows and bottom 30 rows o a dataframe.
