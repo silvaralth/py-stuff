@@ -2,7 +2,17 @@
 
 Data is collected everywhere around us, but data does not mean information. Data analysis (data science), helps us unlock the information and insights from raw data to answer our questions. So data analysis plays an important role by helping us to discover useful information from the data, answer questions, and even predict the future or the unknown.
 
-## Vocabulary:
+## :)
+
+[Vocabulary](#vocabulary)
+
+[Importing and exporting](#importing-and-exporting)
+
+[Checking data](#checking-data)
+
+[Accessing Databases with Python](#accessing-databases-with-python)
+
+## Vocabulary
 
 **Dataset** is a file, data collection, sometimes the first row is a header, which contains columns names.
 
@@ -14,7 +24,7 @@ In a dataset, each row is one **Datapoint**, a large number of properties are as
 
 A **DataFrame** is generally the most commonly used *Pandas* object. A 2-dimensional labeled data structure with columns of potentially different types. (like an SQL table)
 
-## Importing and exporting:
+## Importing and exporting
 ``` 
 import pandas as pd
 
