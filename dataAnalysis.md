@@ -8,6 +8,7 @@ Data is collected everywhere around us, but data does not mean information. Data
 - [Importing and exporting](#importing-and-exporting)
 - [Checking data](#checking-data)
 - [Accessing Databases with Python](#accessing-databases-with-python)
+- [Data wrangling](#data-wrangling)
 
 ## Vocabulary
 
@@ -20,6 +21,8 @@ Data is collected everywhere around us, but data does not mean information. Data
 In a dataset, each row is one **Datapoint**, a large number of properties are associated with each datapoint (is like a *tuple* in RDB?).
 
 A **DataFrame** is generally the most commonly used *Pandas* object. A 2-dimensional labeled data structure with columns of potentially different types. (like an SQL table)
+
+**Data preprocessing**, often called data cleaning or data wrangling, is the process of converting or mapping data from one raw form into another format to make it ready for further analysis. (Indentify and andle missing values, data formatting, data normalization (centering/scaling), data binning, and turning categorical values to numeric variables.
 
 ## Importing and exporting
 ``` 
@@ -125,3 +128,36 @@ results = cursor.fetchall()
 cursor.close()
 connection.close()
 ```
+## Data Wrangling
+
+When no data value is stored for feature for a particular observation, we say this feature has a missing value. We can **drop missing values**(drop the variable, drop the data entry) **or replace them**(with average or similar datapoints, frequency or based on other functions), of course, each situation is different and should be judged differently.
+
+When you drop data, you could either drop the whole variable or just the single data entry with the missing value. If you don't have a lot of observations with missing data, usually dropping the particular entry is the best. If you're removing data, you want to look to do something that has the least amount of impact. Replacing data is better since no data is wasted. However, it is less accurate since we need to replace missing data with a guess of what the data should be. One standard for placement technique is to replace missing values by the average value of the entire variable., marcado desde 1 minuto 34 segundos hasta 1 minuto 41 segundosOne standard for placement technique is to replace missing values by the average value of the entire variable.
+
+But what if the values cannot be averaged as with categorical variables? For a variable like fuel type, there isn't an average fuel type since the variable values are not numbers. In this case, one possibility is to try using the mode, the most common like gasoline.
+
+To remove data that contains missing values Panda's library has a built-in method called *dropna*, with the dropna method, you can choose to drop rows or columns that contain missing values like NaN. So you'll need to specify access equal zero to drop the rows or access equals one to drop the columns that contain the missing values.
+
+```
+# dropna method dataframes.dropna():
+df.dropna(subset=["price"], axis=0, inplace=True)
+
+```
+
+Setting the argument in place to true, allows the modification to be done on the data set directly. In place equals true, just writes the result back into the data frame.
+
+To replace missing values like NaNs with actual values, Pandas library has a built-in method called replace which can be used to fill in the missing values with the newly calculated values. As an example, assume that we want to replace the missing values of the variable normalized losses by the mean value of the variable. Therefore, the missing value should be replaced by the average of the entries within that column. 
+
+```
+#dataframe.replace(missing_value, new_value):
+
+# In Python, first we calculate the mean of the column.
+mean = df["normalised-losess"].mean()
+
+#Then we use the method replace to specify the value we would like to be replaced as the first parameter, in this case NaN. The second parameter is the value we would like to replace it with i.e the mean in this example.
+df["normalised-losess"].replace(np.nan, mean)
+
+```
+
+This is a fairly simplified way of replacing missing values.
+
