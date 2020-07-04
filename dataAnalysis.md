@@ -22,7 +22,7 @@ In a dataset, each row is one **Datapoint**, a large number of properties are as
 
 A **DataFrame** is generally the most commonly used *Pandas* object. A 2-dimensional labeled data structure with columns of potentially different types. (like an SQL table)
 
-**Data preprocessing**, often called data cleaning or data wrangling, is the process of converting or mapping data from one raw form into another format to make it ready for further analysis. (Indentify and andle missing values, data formatting, data normalization (centering/scaling), data binning, and turning categorical values to numeric variables.
+**Data preprocessing**, often called data cleaning or data wrangling, is the process of converting or mapping data from one raw form into another format to make it ready for further analysis. (Indentify and handle missing values, data formatting, data normalization (centering/scaling), data binning, and turning categorical values to numeric variables.
 
 ## Importing and exporting
 ``` 
@@ -129,6 +129,8 @@ cursor.close()
 connection.close()
 ```
 ## Data Wrangling
+
+### Pre-processing Data
 
 When no data value is stored for feature for a particular observation, we say this feature has a missing value. We can **drop missing values**(drop the variable, drop the data entry), **replace them**(with average or similar datapoints, frequency or based on other functions), **or leave the missing data as missing data**... of course, each situation is different and should be judged differently.
 
