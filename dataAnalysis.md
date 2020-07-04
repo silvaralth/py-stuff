@@ -130,7 +130,7 @@ connection.close()
 ```
 ## Data Wrangling
 
-When no data value is stored for feature for a particular observation, we say this feature has a missing value. We can **drop missing values**(drop the variable, drop the data entry) **or replace them**(with average or similar datapoints, frequency or based on other functions), of course, each situation is different and should be judged differently.
+When no data value is stored for feature for a particular observation, we say this feature has a missing value. We can **drop missing values**(drop the variable, drop the data entry), **replace them**(with average or similar datapoints, frequency or based on other functions), **or leave the missing data as missing data**... of course, each situation is different and should be judged differently.
 
 When you drop data, you could either drop the whole variable or just the single data entry with the missing value. If you don't have a lot of observations with missing data, usually dropping the particular entry is the best. If you're removing data, you want to look to do something that has the least amount of impact. Replacing data is better since no data is wasted. However, it is less accurate since we need to replace missing data with a guess of what the data should be. One standard for placement technique is to replace missing values by the average value of the entire variable., marcado desde 1 minuto 34 segundos hasta 1 minuto 41 segundosOne standard for placement technique is to replace missing values by the average value of the entire variable.
 
