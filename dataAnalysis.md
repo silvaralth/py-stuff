@@ -222,3 +222,17 @@ In z-score, *Mean* method will return the average value of the feature in the da
 ### Binning
 
 Binning is when you group values together into bins. For example, you can bin “age” into [0 to 5], [6 to 10], [11 to 15] and so on. Sometimes, binning can improve accuracy of the predictive models.
+
+> Example: “price” here is an attribute range from 5,000 to 45,500. Using binning, we categorize the price into three bins: low price, medium price, and high prices. In the actual car dataset, ”price" is a numerical variable ranging from 5188 to 45400, it has 201 unique values. We can categorize them into 3 bins: low, medium, and high-priced cars. In Python we can easily implement the binning: We would like 3 bins of equal binwidth, so we need 4 numbers as dividers that are equal distance apart. First we use the numpy function “linspace” to return the array “bins” that contains 4 equally spaced numbers over the specified interval of the price. We create a list “group_names “ that contains the different bin names. We use the pandas function ”cut” to segment and sort the data values into bins.
+
+```
+#numpy linspace
+bins = np.linspace(min(df[price]), max(df["price]), 4)
+
+#creating a "group_names" list
+group_names = ["Low", "Medium", "High"]
+
+# Segmenting and sorting the data into bins
+df["price-binned"] = pd.cut(df["price"], bins, labels=group_names, include_lowest=True )
+
+```
