@@ -163,3 +163,24 @@ df["normalised-losess"].replace(np.nan, mean)
 
 This is a fairly simplified way of replacing missing values.
 
+Data formatting means bringing data into a common standard of expression that allows users to make meaningful comparisons. As a part of dataset cleaning, data formatting ensures the data is consistent and easily understandable.
+
+```
+#Converting "mpg" to "L/100km"
+df["city-mpg"]= 235/df["city-mpg"]
+
+#Renaming column
+df.rename(columns={"city-mpg": "city-L/100Km"}, inplace=True)
+
+```
+Although the expected data type should really be an integer or float type. It is important for later analysis to explore the features data type and convert them to the correct data types. Otherwise, the developed models later on may behave strangely, and totally valid data may end up being treated like missing data.
+
+```
+#to identify data types
+dataframe.dtypes()
+
+#to convert data types and cast
+dataframe.astype()
+
+```
+
