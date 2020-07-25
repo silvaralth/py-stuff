@@ -134,6 +134,40 @@ connection.close()
 
 When no data value is stored for feature for a particular observation, we say this feature has a missing value. We can **drop missing values**(drop the variable, drop the data entry), **replace them**(with average or similar datapoints, frequency or based on other functions), **or leave the missing data as missing data**... of course, each situation is different and should be judged differently.
 
+Before anyting, you can check if the dataset is according python types for computational speed and convenience: If Missing values come with "?" (for example) we can deal with it as follows:
+
+```
+# replace "?" to NaN
+df.replace("?", np.nan, inplace = True)
+
+#to check it: df.head(5)
+#remember import numpy!!!
+
+```
+
+Aditionally, there are two methods to detect missing data:
+
+.isnull()
+.notnull()
+
+```
+#The output is a boolean value indicating whether the value that is passed into the argument is in fact missing data.
+#"True" stands for missing value, while "False" stands for not missing value.
+
+missing_data = df.isnull()
+
+```
+
+Using a for loop in Python, we can quickly figure out the number of missing values in each column. As mentioned above, "True" represents a missing value, "False" means the value is present in the dataset. In the body of the for loop the method ".value_counts()" counts the number of "True" values.
+
+```
+for column in missing_data.columns.values.tolist():
+    print(column)
+    print (missing_data[column].value_counts())
+    print("")  
+
+```
+
 When you drop data, you could either drop the whole variable or just the single data entry with the missing value. If you don't have a lot of observations with missing data, usually dropping the particular entry is the best. If you're removing data, you want to look to do something that has the least amount of impact. Replacing data is better since no data is wasted. However, it is less accurate since we need to replace missing data with a guess of what the data should be. One standard for placement technique is to replace missing values by the average value of the entire variable. One standard for placement technique is to replace missing values by the average value of the entire variable.
 
 But what if the values cannot be averaged as with categorical variables? For a variable like fuel type, there isn't an average fuel type since the variable values are not numbers. In this case, one possibility is to try using the mode, the most common like gasoline.
@@ -160,7 +194,6 @@ mean = df["normalised-losess"].mean()
 df["normalised-losess"].replace(np.nan, mean)
 
 ```
-
 This is a fairly simplified way of replacing missing values.
 
 ### Formatting
@@ -213,7 +246,7 @@ df["lenght"] = (df["length"]-df["length"].max())/
 #z-score
 #df[column] = ( df[column] - df[column].mean() ) / ( df[column].std() )
 
-#df[column] = (df[length]-df[length].mean())/(df[length].std())
+#df[column] = (df["length"]-df["length"].mean())/(df["length"].std())
 
 ``` 
 
