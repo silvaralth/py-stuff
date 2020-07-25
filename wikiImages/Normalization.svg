@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="200" viewBox="0 0 640 200">
+  <defs>
+    <clipPath id="clip-Normalization">
+      <rect width="640" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="Normalization" clip-path="url(#clip-Normalization)">
+    <rect width="640" height="200" fill="#fff"/>
+    <g id="Rectángulo_5" data-name="Rectángulo 5" transform="translate(35 36)" fill="none" stroke="#d3d3d3" stroke-width="1">
+      <rect width="150" height="136" stroke="none"/>
+      <rect x="0.5" y="0.5" width="149" height="135" fill="none"/>
+    </g>
+    <g id="Rectángulo_6" data-name="Rectángulo 6" transform="translate(222 36)" fill="none" stroke="#d3d3d3" stroke-width="1">
+      <rect width="193" height="136" stroke="none"/>
+      <rect x="0.5" y="0.5" width="192" height="135" fill="none"/>
+    </g>
+    <g id="Rectángulo_7" data-name="Rectángulo 7" transform="translate(452 36)" fill="none" stroke="#d3d3d3" stroke-width="1">
+      <rect width="176" height="136" stroke="none"/>
+      <rect x="0.5" y="0.5" width="175" height="135" fill="none"/>
+    </g>
+    <g id="Rectángulo_1" data-name="Rectángulo 1" transform="translate(22 23)" fill="#d3d3d3" stroke="#707070" stroke-width="1">
+      <rect width="25" height="25" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+    </g>
+    <g id="Rectángulo_3" data-name="Rectángulo 3" transform="translate(209 23)" fill="#d3d3d3" stroke="#707070" stroke-width="1">
+      <rect width="25" height="25" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+    </g>
+    <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(439 23)" fill="#d3d3d3" stroke="#707070" stroke-width="1">
+      <rect width="25" height="25" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="24" fill="none"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(35 41)" fill="#fff" font-size="14" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="-3.931" y="0">1</tspan></text>
+    <text id="_2" data-name="2" transform="translate(222 41)" fill="#fff" font-size="14" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="-3.931" y="0">2</tspan></text>
+    <text id="_3" data-name="3" transform="translate(452 41)" fill="#fff" font-size="14" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="-3.931" y="0">3</tspan></text>
+    <text id="Simple_Feature_scaling" data-name="Simple Feature scaling" transform="translate(57 33)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">Simple Feature scaling</tspan></text>
+    <text id="new" transform="translate(70 116)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">new</tspan></text>
+    <text id="new-2" data-name="new" transform="translate(487 116)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">new</tspan></text>
+    <text id="new-3" data-name="new" transform="translate(257 116)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">new</tspan></text>
+    <text id="old" transform="translate(131 102)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">old</tspan></text>
+    <text id="old-2" data-name="old" transform="translate(548 102)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">old</tspan></text>
+    <text id="old-3" data-name="old" transform="translate(318 102)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">old</tspan></text>
+    <text id="min" transform="translate(365 102)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">min</tspan></text>
+    <text id="min-2" data-name="min" transform="translate(365 128)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">min</tspan></text>
+    <text id="max" transform="translate(131 129)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">max</tspan></text>
+    <text id="max-2" data-name="max" transform="translate(318 129)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">max</tspan></text>
+    <text id="x" transform="translate(57 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-2" data-name="x" transform="translate(474 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-3" data-name="x" transform="translate(244 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-4" data-name="x" transform="translate(118 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-5" data-name="x" transform="translate(535 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-6" data-name="x" transform="translate(305 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-7" data-name="x" transform="translate(352 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="_" data-name="µ" transform="translate(582 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">µ</tspan></text>
+    <text id="x-8" data-name="x" transform="translate(352 126)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="x-9" data-name="x" transform="translate(118 127)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="σ" transform="translate(557 127)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">σ</tspan></text>
+    <text id="x-10" data-name="x" transform="translate(305 127)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">x</tspan></text>
+    <text id="_2-2" data-name="=" transform="translate(96 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">=</tspan></text>
+    <text id="_3-2" data-name="=" transform="translate(513 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">=</tspan></text>
+    <text id="_-" data-name="-" transform="translate(340 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">-</tspan></text>
+    <text id="_--2" data-name="-" transform="translate(570 100)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">-</tspan></text>
+    <text id="_--3" data-name="-" transform="translate(340 126)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">-</tspan></text>
+    <text id="_4" data-name="=" transform="translate(283 114)" fill="#363636" font-size="20" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">=</tspan></text>
+    <text id="Min-Max" transform="translate(244 33)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">Min-Max</tspan></text>
+    <text id="Z-score" transform="translate(474 33)" fill="#363636" font-size="10" font-family="-apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif"><tspan x="0" y="0">Z-score</tspan></text>
+    <line id="Línea_6" data-name="Línea 6" x2="45" transform="translate(112.5 107.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <line id="Línea_8" data-name="Línea 8" x2="70" transform="translate(529.5 107.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+    <line id="Línea_7" data-name="Línea 7" x2="95" transform="translate(299.5 107.5)" fill="none" stroke="#d3d3d3" stroke-width="1"/>
+  </g>
+</svg>
