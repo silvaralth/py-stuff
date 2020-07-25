@@ -183,4 +183,12 @@ dataframe.dtypes()
 dataframe.astype()
 
 ```
+#### Normalization
+
+Making the ranges consistent between variables, normalization enables a fair comparison between the different features, making sure they have the same impact (It is also important for computational reasons). 
+
+*Example: Consider a data set containing two features, age and income. Where age ranges from 0-100, while income ranges from 0-20,000 and higher. Income is about 1,000 times larger than age and ranges from 20,000-500,000. So, these two features are in very different ranges. When we do further analysis, like linear regression for example, the attribute income will intrinsically influence the result more due to its larger value. But this doesn't necessarily mean it is more important as a predictor. So, the nature of the data biases the linear regression model to weigh income more heavily than age. To avoid this, we can normalize these two variables into values that range from zero to one.*
+
+There are several ways to normalize data but we gonna check three of them:
+![Normalization](https://github.com/silvaralth/py-stuff/blob/master/wikiImages/Normalization.svg)
 
