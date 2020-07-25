@@ -163,6 +163,8 @@ df["normalised-losess"].replace(np.nan, mean)
 
 This is a fairly simplified way of replacing missing values.
 
+### Formatting
+
 Data formatting means bringing data into a common standard of expression that allows users to make meaningful comparisons. As a part of dataset cleaning, data formatting ensures the data is consistent and easily understandable.
 
 ```
@@ -183,7 +185,7 @@ dataframe.dtypes()
 dataframe.astype()
 
 ```
-#### Normalization
+### Normalization
 
 Making the ranges consistent between variables, normalization enables a fair comparison between the different features, making sure they have the same impact (It is also important for computational reasons). 
 
@@ -216,3 +218,7 @@ df["lenght"] = (df["length"]-df["length"].max())/
 ``` 
 
 In z-score, *Mean* method will return the average value of the feature in the data set, and *STD* method will return the standard deviation of the features in the data set.
+
+### Binning
+
+Binning is when you group values together into bins. For example, you can bin “age” into [0 to 5], [6 to 10], [11 to 15] and so on. Sometimes, binning can improve accuracy of the predictive models.
