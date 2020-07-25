@@ -236,3 +236,13 @@ group_names = ["Low", "Medium", "High"]
 df["price-binned"] = pd.cut(df["price"], bins, labels=group_names, include_lowest=True )
 
 ```
+
+Most statistical models cannot take in objects or strings as input and for model training only take the numbers as inputs. We encode the values by adding new features corresponding to each unique element in the original feature we would like to encode. This technique is often called "One-hot encoding. In Pandas, we can use get_dummies method to convert categorical variables to dummy variables (0 or 1).
+
+```
+#Dummy variables
+pd.get_dummies(df["column"])
+
+```
+
+The get_dummies method automatically generates a list of numbers, each one corresponding to a particular category of the variable.
