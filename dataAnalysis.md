@@ -279,3 +279,61 @@ pd.get_dummies(df["column"])
 ```
 
 The get_dummies method automatically generates a list of numbers, each one corresponding to a particular category of the variable.
+
+
+## Exploratory Data Analysis
+
+EDA is an approach to analyze data in order to summarize main characteristics of the data, gain better understanding of the data set, uncover relationships between different variables, and extract important variables for the problem we're trying to solve.
+
+### Descriptive statistics
+
+When you begin to analyze data, it's important to first explore your data before you spend time building complicated models. One easy way to do so, is to calculate some Descriptive Statistics for your data. Descriptive statistical analysis helps to describe basic features of a data set, and obtains a short summary about the sample and measures of the data.
+
+```
+df.describe()
+````
+Using the describe function and applying it on your data frame, the describe function automatically computes basic statistics for all numerical variables. It shows the mean, the total number of data points, the standard deviation, the quartiles and the extreme values. Any NAN values are automatically skipped in these statistics. This function will give you a clear idea of the distribution of your different variables.
+
+
+```
+#value_counts()
+df=pd.DataFrame({'A':["a","b","a","c","a"]})
+df['A'].value_counts()
+```
+You could have also categorical variables in your data set. These are variables that can be divided up into different categories or groups, and have discrete values. 
+
+```
+#BoxPlots
+```
+
+Box plots are a great way to visualize numeric data, since you can visualize the various distributions of the data. The main features that the box plot shows, are the median of the data, which represents where the middle data point is. The upper quartile shows where the 75th percentile is. The lower quartile shows where the 25th percentile is. The data between the upper and lower quartile represents the interquartile range. Next you have the lower and upper extremes. These are calculated as 1.5 times the interquartile range, above the 75th percentile, and as 1.5 times the IQR below the 25th percentile. Finally, box plots also display outliers as individual dots that occur outside the upper and lower extremes. With box plots, you can easily spot outliers, and also see the distribution and skewness of the data. Box plots make it easy to compare between groups.
+
+```
+#Scatter Plot
+
+x=df[“engine-size”]
+y=df[“price”]
+plt.scatter(x,y)
+plt.title(“Scatterplot of Engine Size vs Price”)
+plt.xlabel(“Engine Size”) 
+plt.ylabel(“Price”) 
+
+```
+What if we want to understand the relationship between engine size and price. Could engine size possibly predict the price of a car? One good way to visualize this is using a scatter plot. Each observation in the scatter plot is represented as a point. This plot shows the relationship between two variables. The predictor variable, is the variable that you are using to predict an outcome. In this case our predictor variable is the engine size.
+
+## GroupBy
+
+The group by method is used on categorical variables, groups the data into subsets according to the different categories of that variable. You can group by a single variable or you can group by multiple variables by passing in multiple variable names.
+
+```
+#Find the average "price" of each car based on "body-style" ?
+df[['price','body-style']].groupby(['body-style'],as_index= False).mean()
+```
+
+To make it easier to understand, we can transform this table to a pivot table by using the pivot method. In the previous table, both drive wheels and body style were listening columns. **A pivot table has one variable displayed along the columns and the other variable displayed along the rows**. Just with one line of code and by using the Panda's pivot method, we can pivot the body style variable so it is displayed along the columns and the drive wheels will be displayed along the rows. The price data now becomes a rectangular grid, which is easier to visualize. This is similar to what is usually done in Excel spreadsheets. 
+
+Another way to represent the pivot table is using a heat map plot. Heat map takes a rectangular grid of data and assigns a color intensity based on the data value at the grid points. It is a great way to plot the target variable over multiple variables and through this get visual clues with the relationship between these variables and the target. 
+
+### Correlation
+
+Correlation is a statistical metric for measuring to what extent different variables are interdependent. In other words, when we look at two variables over time, if one variable changes how does this affect change in the other variable? 
