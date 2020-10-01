@@ -321,7 +321,7 @@ plt.ylabel(“Price”)
 ```
 What if we want to understand the relationship between engine size and price. Could engine size possibly predict the price of a car? One good way to visualize this is using a scatter plot. Each observation in the scatter plot is represented as a point. This plot shows the relationship between two variables. The predictor variable, is the variable that you are using to predict an outcome. In this case our predictor variable is the engine size.
 
-## GroupBy
+### GroupBy
 
 The group by method is used on categorical variables, groups the data into subsets according to the different categories of that variable. You can group by a single variable or you can group by multiple variables by passing in multiple variable names.
 
@@ -336,4 +336,29 @@ Another way to represent the pivot table is using a heat map plot. Heat map take
 
 ### Correlation
 
-Correlation is a statistical metric for measuring to what extent different variables are interdependent. In other words, when we look at two variables over time, if one variable changes how does this affect change in the other variable? 
+Correlation is a statistical metric for measuring to what extent different variables are interdependent. In other words, when we look at two variables over time, if one variable changes how does this affect change in the other variable?
+
+### Correlation - Statistics
+
+### - Pearson Correlation
+
+One way to measure the strength of the correlation between continuous numerical variable is by using a method called Pearson correlation. Pearson correlation method will give you two values: the correlation coefficient and the P-value. 
+
+So how do we interpret these values? 
+
+1. For the correlation coefficient, a value close to 1 implies a large positive correlation, while a value close to negative 1 implies a large negative correlation, and a value close to zero implies no correlation between the variables.
+
+2. The P-value will tell us how certain we are about the correlation that we calculated. For the P-value, a value less than.001 gives us a strong certainty about the correlation coefficient that we calculated. A value between.001 and.05 gives us moderate certainty. A value between.05 and.1 will give us a weak certainty. And a P-value larger than.1 will give us no certainty of correlation at all.
+
+#Analysis of Variance - ANOVA
+
+ANOVA can be used to find the correlation between different groups of a categorical variable. 
+
+The ANOVA test returns two values, the F-test score and the p-value. The F-test calculates the ratio of variation between groups mean, over the variation within each of the sample groups. The p-value shows whether the obtained result is statistically significant. Without going too deep into the details, the F-test calculates the ratio of variation between groups means over the variation within each of the sample group means.
+
+```
+#ANOVA
+```
+
+
+The ANOVA test can be performed in Python using the f underscore oneway method, as the built-in function of the SI/PI package. We pass in the price data of the two car make groups that we want to compare and it calculates the ANOVA results. 
