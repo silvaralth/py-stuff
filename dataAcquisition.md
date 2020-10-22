@@ -98,4 +98,22 @@ Found 3 items
 $ hdfs dfs -rm -r -skipTrash /user/hadoop/tera*
 Deleted /user/hadoop/terainput
 Deleted /user/hadoop/teraoutput
+
+# Practica 1
+
+$ hdfs dfs -mkdir -p /user/hadoop/txtinput
+$ hdfs dfs -put Downloads/texto.txt /user/hadoop/txtinput
+
+# Contar palabras con wordcount
+# hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar wordcount <carpeta HDFS de entrada> <nueva carpeta HDFS de salida>
+
+$ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar wordcount /user/hadoop/txtinput /user/hadoop/txtoutput
+
+# Cuantas veces aparece "vaca" en part-r-00000
+$ hdfs dfs -cat /user/hadoop/txtoutput/part-r-00000
+# 5
+
+
+
+
 ```
